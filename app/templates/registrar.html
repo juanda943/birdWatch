@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h2>Registrar Avistamiento</h2>
+<form method="post">
+    Especie: <input type="text" name="especie" required><br>
+    Ubicación: <input type="text" name="ubicacion" required><br>
+    Fecha: <input type="date" name="fecha" required><br>
+    Hora: <input type="time" name="hora" required><br>
+    Observador: <input type="text" name="observador"><br>
+    Comentario: <textarea name="comentario"></textarea><br>
+    <input type="submit" value="Registrar">
+</form>
+{% endblock %}
