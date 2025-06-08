@@ -7,6 +7,7 @@
   * python run.py (ejecutar la app)
   * Luego abre tu navegador y ve a:  👉 http://127.0.0.1:5000
  
-
+En caso de que se llege a presentar un problema de "Seguridad" porque Windows no deja iniciar el Ven utilizar:  
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
  
