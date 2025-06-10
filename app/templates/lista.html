@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h2>Lista de Avistamientos</h2>
+<ul>
+    {% for a in avistamientos %}
+    <li>{{ a.fecha }} {{ a.hora }} - {{ a.especie }} en {{ a.ubicacion }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

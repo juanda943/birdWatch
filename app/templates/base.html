@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Aves</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Avistamiento de Aves</h1>
+        <nav>
+            <a href="/">Inicio</a> |
+            <a href="/registrar">Registrar</a> |
+            <a href="/lista">Ver Registros</a> |
+            <a href="/orden_fecha">Ordenar por Fecha</a> |
+            <a href="/orden_lugar">Ordenar por Lugar</a> |
+            <a href="/especies">Por Especie</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h2>Avistamientos por Especie</h2>
+<ul>
+    {% for especie, registros in especies %}
+        <li><strong>{{ especie }}</strong>
+            <ul>
+                {% for r in registros %}
+                    <li>{{ r.fecha }} - {{ r.ubicacion }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
