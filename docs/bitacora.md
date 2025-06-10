@@ -1,5 +1,6 @@
 # Bitácora de Desarrollo
 
+
 ## Asiganación 1
 - ✅ Definición del problema: registro de avistamientos de aves.
 - ✅ Revisión de rúbrica.

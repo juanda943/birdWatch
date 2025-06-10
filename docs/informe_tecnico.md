@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 # Informe Técnico: Sistema de Registro de Avistamiento de Aves (BirdWatch) 🐦
 
 ## 1. Introducción
 El presente documento describe el desarrollo de una aplicación web para el registro de avistamientos de aves, diseñado como proyecto final de la asignatura de Estructuras de Datos. El sistema permite ingresar, visualizar y ordenar registros usando estructuras como listas, colas y árboles binarios.
+=======
+# Informe Técnico: Sistema de Registro de Avistamiento de Aves
+
+## 1. Introducción
+El presente documento describe el desarrollo de un sistema web para el registro de avistamientos de aves, diseñado como proyecto final de la asignatura de Estructuras de Datos. El sistema permite ingresar, visualizar y ordenar registros usando estructuras como listas, colas y árboles binarios.
+>>>>>>> 4b557eb0cd5d7953a101b4246388ef91111b3bb3
 
 ## 2. Objetivos
 - Aplicar estructuras de datos para resolver un problema real.
 - Implementar una aplicación web funcional con Flask.
+<<<<<<< HEAD
 - Facilitar registro datos de avistamiento.
 
 ## 3. Definicion del problema
@@ -26,10 +34,24 @@ listas dinámicas (para almacenar los avistamientos), colas (para registrar los 
 
 Para reakizar una correcta gestion de los datos registrados en el sitio se recurre a logica algoritmica para ordenar los datos de acuerdo con un parametro especifico, como, la fecha, la especie o el lugar de avistamiento. Los algoritmos implementados para tal fin son:
 
+=======
+- Facilitar el análisis y visualización de datos de avistamiento.
+
+## 3. Justificación del Problema
+La observación de aves es una actividad científica y recreativa que genera datos valiosos para estudios ecológicos. Este sistema busca facilitar el registro y consulta de dichos datos.
+
+## 4. Estructuras de Datos Usadas
+- **Listas dinámicas:** almacenan todos los registros.
+- **Colas (deque):** mantienen los últimos 10 registros.
+- **Árbol Binario de Búsqueda (BST):** clasifica avistamientos por especie.
+
+## 5. Algoritmos Implementados
+>>>>>>> 4b557eb0cd5d7953a101b4246388ef91111b3bb3
 - **Ordenamiento por Fecha y Lugar:** usando `sorted` y claves personalizadas.
 - **Recorridos en Orden del BST:** para listar especies en orden alfabético.
 - **Búsqueda lineal en listas.**
 
+<<<<<<< HEAD
 ## 6. Análisis de Complejidad (Notación BigO)
 
 El analisis algoritmico se enfoca en observar la eficiencia del codigo en terminos de:
@@ -105,6 +127,14 @@ Utilizando entonces la notación Big O, se tiene el siguiente analisis de comple
 
 Los Frameworks y demas herramientas utilizadas para el desarrollo de la pagina web son:
 
+=======
+## 6. Análisis de Complejidad (Resumen)
+- Lista: inserción O(1), búsqueda O(n).
+- Cola: inserción/borrado en extremos O(1).
+- Árbol BST: inserción y búsqueda promedio O(log n), peor caso O(n).
+
+## 7. Arquitectura del Sistema
+>>>>>>> 4b557eb0cd5d7953a101b4246388ef91111b3bb3
 - Flask como backend web.
 - HTML con Jinja2 para frontend.
 - Rutas para registrar, listar y ordenar avistamientos.
@@ -113,6 +143,7 @@ Los Frameworks y demas herramientas utilizadas para el desarrollo de la pagina w
 ## 8. Conclusiones
 El sistema permite demostrar de manera práctica el uso de estructuras de datos fundamentales en un entorno realista y educativo. La arquitectura modular facilita su mantenimiento y futuras extensiones.
 
+<<<<<<< HEAD
 ## Evidencias y anexos 
 
 La aplicacion corre en el puerto http://127.0.0.1:5000
@@ -122,3 +153,5 @@ Grafico de comparacion de funciones en el analisis BigO:
 ![Gráfico de Notación Big O](img/comparacionNotacionBigO.png)
 
 
+=======
+>>>>>>> 4b557eb0cd5d7953a101b4246388ef91111b3bb3
