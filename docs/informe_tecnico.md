@@ -124,4 +124,3 @@ Grafico de comparacion de funciones en el analisis BigO:
 ![Gráfico de Notación Big O](img/comparacionNotacionBigO.png)
 
 
-

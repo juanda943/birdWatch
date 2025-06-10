@@ -2,10 +2,10 @@
 from collections import deque
 from datetime import datetime
 
-avistamientos = []
-ultimos_avistamientos = deque(maxlen=10)
+avistamientos = []      #Lista
+ultimos_avistamientos = deque(maxlen=10)   #Cola
 
-class NodoEspecie:
+class NodoEspecie:                   #Arbol Binario
     def __init__(self, especie):
         self.especie = especie
         self.registros = []
@@ -24,7 +24,7 @@ class NodoEspecie:
                 self.derecha = NodoEspecie(especie)
             self.derecha.insertar(especie, datos)
 
-    def en_orden(self):
+    def en_orden(self):    #Recorrer el arbol
         result = []
         if self.izquierda:
             result.extend(self.izquierda.en_orden())
@@ -35,8 +35,8 @@ class NodoEspecie:
 
 arbol_especies = None
 
-def ordenar_por_fecha(data):
+def ordenar_por_fecha(data):    #Ordenar por Fecha
     return sorted(data, key=lambda x: datetime.strptime(x["fecha"], "%Y-%m-%d"))
 
-def ordenar_por_lugar(data):
+def ordenar_por_lugar(data):    #ordenar por lugar
     return sorted(data, key=lambda x: x["ubicacion"])

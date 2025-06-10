@@ -1,24 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registro de Aves</title>
+    <title>BirdWatch - Avistamiento de Aves</title>
+    <style>
+        :root {
+            --color-azul: #003865;
+            --color-amarillo: #F8B400;
+            --color-gris: #EAEAEA;
+            --color-blanco: #FFFFFF;
+            --color-negro: #000000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: var(--color-gris);
+            color: var(--color-negro);
+        }
+
+        header {
+            background-color: var(--color-azul);
+            color: var(--color-blanco);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--color-amarillo);
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: var(--color-negro);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2rem;
+            background-color: var(--color-blanco);
+            margin: 1rem auto;
+            max-width: 900px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: var(--color-azul);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Registro de Avistamiento de Aves</h1>
-        <nav>
-            <a href="/">Inicio</a> |
-            <a href="/registrar">Registrar</a> |
-            <a href="/lista">Ver Registros</a> |
-            <a href="/orden_fecha">Ordenar por Fecha</a> |
-            <a href="/orden_lugar">Ordenar por Lugar</a> |
-            <a href="/especies">Por Especie</a>
-        </nav>
+        <h1>BirdWatch 🐦</h1>
+        <p>Proyecto ETITC - Registro de Avistamientos de Aves</p>
     </header>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/registrar">Registrar</a>
+        <a href="/lista">Ver Lista</a>
+        <a href="/orden_fecha">Ordenar por Fecha</a>
+        <a href="/orden_lugar">Ordenar por Lugar</a>
+        <a href="/especies">Especies</a>
+    </nav>
     <main>
         {% block content %}{% endblock %}
     </main>
+    <footer>
+        &copy; 2025 - ETITC | BirdWatch - Estructuras de Datos
+    </footer>
 </body>
 </html>
